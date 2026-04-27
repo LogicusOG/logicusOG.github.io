@@ -1,0 +1,218 @@
+<!-- =========================
+FILE: kurse.html
+========================= -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kurse — Logicus OG</title>
+  <meta name="description" content="Mathe- und Informatikkurse für Vorschule bis Matura. Graz." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,750&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="grid-noise"></div>
+  </div>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Logicus OG Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" aria-label="Logicus Symbol" focusable="false">
+            <path d="M12 20c8-10 32-10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <path d="M12 44c8 10 32 10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+            <path d="M18 32h28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Logicus OG</span>
+          <span class="brand-sub">Mathe • Informatik • Graz</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle__label">Menü</span>
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link" href="index.html">Start</a>
+          <a class="nav-link is-active" href="kurse.html">Kurse</a>
+          <a class="nav-link" href="preise.html">Preise</a>
+          <a class="nav-link" href="team.html">Team</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-link" href="classroom.html">Classroom</a>
+          <a class="nav-link nav-link--cta" href="kontakt.html">Kontakt</a>
+
+          <div class="nav-tools" role="group" aria-label="Ansicht">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+              <span class="theme-toggle__icon" aria-hidden="true"></span>
+              <span class="theme-toggle__text">Hell/Dunkel</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="pill">Kurse</span> <span class="pill pill--soft">Individuell oder Gruppe (2–8)</span></p>
+          <h1 class="page-title">Mathe & Informatik — passend zur Schulstufe.</h1>
+          <p class="page-lead">
+            Hier findet ihr die Kursstruktur. Für konkrete Ziele (z. B. „Schularbeit nächste Woche“ oder „Matura im Mai“)
+            nutzt bitte das <a href="kontakt.html">Kontaktformular</a>.
+          </p>
+        </div>
+
+        <div class="page-hero-aside reveal" aria-hidden="true">
+          <div class="aside-plate">
+            <div class="aside-top">
+              <div class="aside-title">Schnelle Auswahl</div>
+              <div class="aside-badges">
+                <span class="chip">Mathe</span>
+                <span class="chip chip--alt">Informatik</span>
+              </div>
+            </div>
+            <div class="aside-lines">
+              <div class="aside-line"><span>Vorschule</span><span class="dim">5–6</span></div>
+              <div class="aside-line"><span>Schule</span><span class="dim">7–18</span></div>
+              <div class="aside-line"><span>Matura</span><span class="dim">Ziel</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="catalog">
+      <div class="container">
+        <div class="catalog-grid">
+          <section class="catalog-col reveal" aria-labelledby="matheTitle">
+            <header class="catalog-head">
+              <h2 class="h2" id="matheTitle">Mathe Kurse</h2>
+              <p class="sub">Von sicheren Grundlagen bis zur Matura-Vorbereitung.</p>
+            </header>
+
+            <!-- List/gallery justified -->
+            <ol class="catalog-list">
+              <li class="catalog-item">
+                <div class="catalog-item__title">Vorschule: Sichere Grundlagen</div>
+                <div class="catalog-item__desc">Zahlen, Mengen, Muster, logisches Denken — spielerisch & strukturiert.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Volksschule: 1–2 Klasse</div>
+                <div class="catalog-item__desc">Rechenstrategien, Textaufgaben, sichere Routine ohne Stress.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Volksschule: 3–4 Klasse</div>
+                <div class="catalog-item__desc">Grundlagen festigen, Vorbereitung auf weiterführende Schule.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Gymnasium: 1–4 Klasse</div>
+                <div class="catalog-item__desc">Algebra, Geometrie, Funktionen — verständlich, Schritt für Schritt.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Gymnasium: 5–8 Klasse</div>
+                <div class="catalog-item__desc">Vertiefung, Prüfungsroutine, Problemstrategien, Kompetenzaufbau.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Matura</div>
+                <div class="catalog-item__desc">Strategie, Themenplan, Training unter Zeitbedingungen.</div>
+              </li>
+            </ol>
+
+            <div class="catalog-cta">
+              <a class="btn btn-secondary" href="preise.html">Preise ansehen</a>
+              <a class="btn btn-ghost" href="kontakt.html">Anfrage</a>
+            </div>
+          </section>
+
+          <section class="catalog-col reveal" aria-labelledby="infoTitle">
+            <header class="catalog-head">
+              <h2 class="h2" id="infoTitle">Informatik Kurse</h2>
+              <p class="sub">Von Grundlagen bis Programmierung & kleine Projekte.</p>
+            </header>
+
+            <ol class="catalog-list">
+              <li class="catalog-item">
+                <div class="catalog-item__title">Grundlage & Betriebssysteme</div>
+                <div class="catalog-item__desc">Software/Hardware, Windows & Linux Basics, Apps & Workflow.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Python: von Anfang bis KI</div>
+                <div class="catalog-item__desc">Syntax, Denken in Algorithmen, Projekte, Einstieg in KI-Konzepte.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Website Entwicklung</div>
+                <div class="catalog-item__desc">HTML/CSS/JS Grundlagen, strukturierte Seiten, kleine Web-Apps.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">C/C++</div>
+                <div class="catalog-item__desc">Grundlagen, Speicher/Pointer (altersgerecht), saubere Übungen.</div>
+              </li>
+              <li class="catalog-item">
+                <div class="catalog-item__title">Microcontroller (Embedded Software)</div>
+                <div class="catalog-item__desc">Kleine Projekte: Sensoren, LEDs, einfache Steuerungen — praktisch.</div>
+              </li>
+            </ol>
+
+            <div class="catalog-cta">
+              <a class="btn btn-secondary" href="kontakt.html">Projekt/Topic anfragen</a>
+              <a class="btn btn-ghost" href="faq.html">FAQ</a>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <section class="band band--thin">
+      <div class="container">
+        <div class="band-head reveal">
+          <h2 class="h2">Individuell oder Kleingruppe</h2>
+          <p class="sub">
+            Je nach Ziel: Einzelunterricht für gezielte Lücken, Kleingruppe für Übungsroutine, Gruppe für motivierendes Training.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-note">
+          Logicus OG · Auf der Murwiese 29, 8041 Graz · Mo–Fr 16:00–20:00 ·
+          <a href="mailto:info@logicus.education">info@logicus.education</a>
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">Start</a>
+        <a href="preise.html">Preise</a>
+        <a href="team.html">Team</a>
+        <a href="faq.html">FAQ</a>
+        <a href="classroom.html">Classroom</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="footer-meta">
+        <p class="tiny">© <span id="year"></span> Logicus OG.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

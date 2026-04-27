@@ -1,0 +1,176 @@
+<!-- =========================
+FILE: preise.html
+========================= -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Preise & Konditionen — Logicus OG</title>
+  <meta name="description" content="Preise für Einzelunterricht, Kleingruppen und Matura-Vorbereitung bei Logicus OG in Graz." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,750&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="grid-noise"></div>
+  </div>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Logicus OG Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" aria-label="Logicus Symbol" focusable="false">
+            <path d="M12 20c8-10 32-10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <path d="M12 44c8 10 32 10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+            <path d="M18 32h28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Logicus OG</span>
+          <span class="brand-sub">Mathe • Informatik • Graz</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle__label">Menü</span>
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link" href="index.html">Start</a>
+          <a class="nav-link" href="kurse.html">Kurse</a>
+          <a class="nav-link is-active" href="preise.html">Preise</a>
+          <a class="nav-link" href="team.html">Team</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-link" href="classroom.html">Classroom</a>
+          <a class="nav-link nav-link--cta" href="kontakt.html">Kontakt</a>
+
+          <div class="nav-tools" role="group" aria-label="Ansicht">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+              <span class="theme-toggle__icon" aria-hidden="true"></span>
+              <span class="theme-toggle__text">Hell/Dunkel</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="pill">Preise</span> <span class="pill pill--soft">transparent & fair</span></p>
+          <h1 class="page-title">Preise & Konditionen</h1>
+          <p class="page-lead">
+            Je nach Ziel und Gruppengröße. Für Matura-Vorbereitung: ab 50€ (abhängig von Umfang/Format).
+          </p>
+        </div>
+
+        <div class="page-hero-aside reveal" aria-hidden="true">
+          <div class="aside-plate">
+            <div class="aside-top">
+              <div class="aside-title">Schnell</div>
+              <div class="aside-badges">
+                <span class="chip">90 min</span>
+                <span class="chip chip--alt">ab 50€</span>
+              </div>
+            </div>
+            <div class="aside-lines">
+              <div class="aside-line"><span>Einzel</span><span class="dim">€60</span></div>
+              <div class="aside-line"><span>2–4</span><span class="dim">€40 / Person</span></div>
+              <div class="aside-line"><span>5–8</span><span class="dim">€30 / Person</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing as a structured table (not card grid) -->
+    <section class="pricing">
+      <div class="container">
+        <div class="pricing-table reveal" role="region" aria-label="Preistabelle">
+          <div class="pricing-row pricing-head" role="row">
+            <div role="columnheader">Format</div>
+            <div role="columnheader">Preis</div>
+            <div role="columnheader">Dauer / Hinweis</div>
+          </div>
+
+          <div class="pricing-row" role="row">
+            <div role="cell"><strong>Einzelunterricht</strong></div>
+            <div role="cell"><strong>€60</strong></div>
+            <div role="cell">90 Minuten</div>
+          </div>
+
+          <div class="pricing-row" role="row">
+            <div role="cell"><strong>Kleingruppe (2–4)</strong></div>
+            <div role="cell"><strong>€40</strong> / Person</div>
+            <div role="cell">90 Minuten · gemeinsames Üben mit persönlichem Fokus</div>
+          </div>
+
+          <div class="pricing-row" role="row">
+            <div role="cell"><strong>Gruppe (5–8)</strong></div>
+            <div role="cell"><strong>€30</strong> / Person</div>
+            <div role="cell">90 Minuten · motivierendes Training</div>
+          </div>
+
+          <div class="pricing-row" role="row">
+            <div role="cell"><strong>Matura-Vorbereitung</strong></div>
+            <div role="cell"><strong>ab €50</strong></div>
+            <div role="cell">je nach Ziel, Umfang, Format (Einzel/Gruppe)</div>
+          </div>
+        </div>
+
+        <div class="pricing-notes reveal">
+          <h2 class="h2">Konditionen</h2>
+          <ul class="bullets">
+            <li>Unterricht in Graz (Auf der Murwiese 29, 8041 Graz).</li>
+            <li>Zeiten: Mo–Fr 16:00–20:00 (nach Vereinbarung).</li>
+            <li>Empfehlung: Ziel + Schulstufe + Thema kurz angeben — dann schlagen wir ein passendes Format vor.</li>
+          </ul>
+
+          <div class="band-cta">
+            <a class="btn btn-primary" href="kontakt.html">Anfrage erstellen</a>
+            <a class="btn btn-ghost" href="faq.html">Häufige Fragen</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-note">
+          Logicus OG · Auf der Murwiese 29, 8041 Graz ·
+          <a href="mailto:info@logicus.education">info@logicus.education</a>
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">Start</a>
+        <a href="kurse.html">Kurse</a>
+        <a href="team.html">Team</a>
+        <a href="faq.html">FAQ</a>
+        <a href="classroom.html">Classroom</a>
+        <a href="kontakt.html">Kontakt</a>
+      </nav>
+      <div class="footer-meta">
+        <p class="tiny">© <span id="year"></span> Logicus OG.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

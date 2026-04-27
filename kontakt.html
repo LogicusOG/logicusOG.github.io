@@ -1,0 +1,233 @@
+<!-- =========================
+FILE: kontakt.html
+========================= -->
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kontakt — Logicus OG</title>
+  <meta name="description" content="Kontakt zu Logicus OG in Graz. Anfrage für Mathe- oder Informatikunterricht erstellen." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500,650,750&family=Manrope:wght@300..800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <a class="skip-link" href="#main">Zum Inhalt springen</a>
+
+  <div class="ambient" aria-hidden="true">
+    <div class="orb orb--a"></div>
+    <div class="orb orb--b"></div>
+    <div class="grid-noise"></div>
+  </div>
+
+  <header class="site-header" data-elevate>
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Logicus OG Startseite">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 64 64" role="img" aria-label="Logicus Symbol" focusable="false">
+            <path d="M12 20c8-10 32-10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round"/>
+            <path d="M12 44c8 10 32 10 40 0" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".75"/>
+            <path d="M18 32h28" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" opacity=".9"/>
+          </svg>
+        </span>
+        <span class="brand-text">
+          <span class="brand-name">Logicus OG</span>
+          <span class="brand-sub">Mathe • Informatik • Graz</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Hauptnavigation">
+        <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="navMenu">
+          <span class="nav-toggle__label">Menü</span>
+          <span class="nav-toggle__icon" aria-hidden="true"></span>
+        </button>
+
+        <div class="nav-menu" id="navMenu">
+          <a class="nav-link" href="index.html">Start</a>
+          <a class="nav-link" href="kurse.html">Kurse</a>
+          <a class="nav-link" href="preise.html">Preise</a>
+          <a class="nav-link" href="team.html">Team</a>
+          <a class="nav-link" href="faq.html">FAQ</a>
+          <a class="nav-link" href="classroom.html">Classroom</a>
+          <a class="nav-link nav-link--cta is-active" href="kontakt.html">Kontakt</a>
+
+          <div class="nav-tools" role="group" aria-label="Ansicht">
+            <button class="theme-toggle" type="button" data-theme-toggle aria-pressed="false">
+              <span class="theme-toggle__icon" aria-hidden="true"></span>
+              <span class="theme-toggle__text">Hell/Dunkel</span>
+            </button>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="page-hero">
+      <div class="container page-hero-grid">
+        <div class="reveal">
+          <p class="eyebrow"><span class="pill">Kontakt</span> <span class="pill pill--soft">Anfrage in 1 Minute</span></p>
+          <h1 class="page-title">Schickt uns eure Anfrage.</h1>
+          <p class="page-lead">
+            Gebt Schulstufe, Fach und Thema an — plus Ziel (z. B. „Schularbeit“, „Matura“, „Grundlagen aufbauen“).
+          </p>
+        </div>
+
+        <div class="page-hero-aside reveal">
+          <div class="aside-plate">
+            <div class="aside-top">
+              <div class="aside-title">Direkt</div>
+              <div class="aside-badges">
+                <span class="chip">Mo–Fr</span>
+                <span class="chip chip--alt">16–20</span>
+              </div>
+            </div>
+            <div class="aside-lines">
+              <div class="aside-line"><span>E-Mail</span><a class="dim" href="mailto:info@logicus.education">info@logicus.education</a></div>
+              <div class="aside-line"><span>Adresse</span><span class="dim">Auf der Murwiese 29</span></div>
+              <div class="aside-line"><span>Ort</span><span class="dim">8041 Graz</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact">
+      <div class="container contact-grid">
+        <section class="contact-form reveal" aria-labelledby="formTitle">
+          <h2 class="h2" id="formTitle">Kontaktformular</h2>
+
+          <!-- No backend assumed: generates mailto link -->
+          <form id="contactForm" novalidate>
+            <div class="field-row">
+              <div class="field">
+                <label for="name">Name</label>
+                <input id="name" name="name" type="text" autocomplete="name" placeholder="Vor- und Nachname" required />
+              </div>
+              <div class="field">
+                <label for="email">E-Mail</label>
+                <input id="email" name="email" type="email" autocomplete="email" placeholder="name@example.com" required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="stufe">Schulstufe auswählen</label>
+                <select id="stufe" name="stufe" required>
+                  <option value="" selected disabled>Bitte wählen…</option>
+                  <option>Vorschule (5–6)</option>
+                  <option>Volksschule 1–2</option>
+                  <option>Volksschule 3–4</option>
+                  <option>Gymnasium 1–4</option>
+                  <option>Gymnasium 5–8</option>
+                  <option>Matura</option>
+                </select>
+              </div>
+
+              <div class="field">
+                <label for="fach">Fach auswählen</label>
+                <select id="fach" name="fach" required>
+                  <option value="" selected disabled>Bitte wählen…</option>
+                  <option>Mathe</option>
+                  <option>Informatik</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="kurs">Thema / Kurswunsch</label>
+                <input id="kurs" name="kurs" type="text" placeholder="z. B. Bruchrechnen, Funktionen, Python Grundlagen, Web..." required />
+              </div>
+            </div>
+
+            <div class="field-row">
+              <div class="field">
+                <label for="ziel">Ziel & kurze Beschreibung</label>
+                <textarea id="ziel" name="ziel" rows="5" placeholder="z. B. Schularbeit in 2 Wochen, Matura-Vorbereitung, Grundlagen festigen..." required></textarea>
+              </div>
+            </div>
+
+            <div class="field-row field-row--inline">
+              <label class="check">
+                <input type="checkbox" id="gruppe" name="gruppe" />
+                <span>Ich bin offen für Kleingruppe (wenn passend)</span>
+              </label>
+            </div>
+
+            <div class="form-actions">
+              <button class="btn btn-primary" type="submit">
+                Anfrage erstellen
+                <span class="btn-arrow" aria-hidden="true">→</span>
+              </button>
+              <p class="form-hint" id="formHint">
+                Klick erstellt eine E-Mail an <strong>info@logicus.education</strong> (ohne Backend).
+              </p>
+              <p class="form-error" id="formError" role="alert" hidden>Bitte füllt alle Pflichtfelder korrekt aus.</p>
+            </div>
+          </form>
+        </section>
+
+        <aside class="contact-info reveal" aria-label="Kontaktinformation & Karte">
+          <div class="info-block">
+            <h2 class="h2">Adresse & Zeiten</h2>
+            <ul class="bullets">
+              <li><strong>Ort:</strong> Graz</li>
+              <li><strong>Adresse:</strong> Auf der Murwiese 29, 8041 Graz</li>
+              <li><strong>E-Mail:</strong> <a href="mailto:info@logicus.education">info@logicus.education</a></li>
+              <li><strong>Zeit:</strong> Mo–Fr 16:00–20:00</li>
+            </ul>
+
+            <div class="info-actions">
+              <a class="btn btn-secondary" target="_blank" rel="noopener"
+                 href="https://www.google.com/maps?q=Auf%20der%20Murwiese%2029%2C%208041%20Graz">
+                In Google Maps öffnen
+              </a>
+              <a class="btn btn-ghost" href="preise.html">Preise</a>
+            </div>
+          </div>
+
+          <div class="map-wrap" aria-label="Google Maps Einbettung">
+            <!-- Allowed: Google Maps embed (external). If you need fully offline, remove iframe and use SVG map illustration. -->
+            <iframe
+              title="Google Maps: Auf der Murwiese 29, 8041 Graz"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Auf%20der%20Murwiese%2029%2C%208041%20Graz&output=embed">
+            </iframe>
+          </div>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div class="footer-brand">
+        <p class="footer-note">
+          Logicus OG · Auf der Murwiese 29, 8041 Graz ·
+          <a href="mailto:info@logicus.education">info@logicus.education</a>
+        </p>
+      </div>
+      <nav class="footer-nav" aria-label="Footer Navigation">
+        <a href="index.html">Start</a>
+        <a href="kurse.html">Kurse</a>
+        <a href="preise.html">Preise</a>
+        <a href="team.html">Team</a>
+        <a href="faq.html">FAQ</a>
+        <a href="classroom.html">Classroom</a>
+      </nav>
+      <div class="footer-meta">
+        <p class="tiny">© <span id="year"></span> Logicus OG.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
